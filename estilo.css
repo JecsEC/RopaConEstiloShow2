@@ -1,0 +1,119 @@
+/* Estilos pagina Sobre Nosotros */
+
+/* Estilos generales para el contenedor */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+/* Estilos para el rectángulo */
+.contenedor-rectangulo {
+    background-color: #f0f0f0;
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Estilos para el título centrado */
+.contenedor-rectangulo-primario h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para los bloques en fila */
+.contenedor-rectangulo-secundario {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Estilos para cada bloque individual */
+.contenedor-rectangulo-secundario-bloque {
+    flex: 1;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    margin: 0 10px;
+    cursor: pointer; 
+}
+
+/* Estilos para cambiar el color del texto al pasar el cursor */
+.contenedor-rectangulo-secundario-bloque:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para aplicar efecto cuando el bloque está seleccionado */
+.contenedor-rectangulo-secundario-bloque:active {
+    transform: translateY(0);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    font-family: sans-serif;
+}
+
+/* Estilos para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .contenedor-rectangulo {
+        width: 90%;
+    }
+
+    .contenedor-rectangulo-secundario {
+        flex-direction: column;
+    }
+
+    .contenedor-rectangulo-secundario-bloque {
+        margin: 10px 0;
+    }
+}
+
+/* Estilo para la pagina categoria */
+
+/* Estilos generales para el contenedor de tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos para cada tarjeta */
+.tarjeta {
+    width: calc(50% - 20px); 
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    cursor: pointer;
+    background-color: #f0f0f0; 
+}
+
+/* Estilos para cambiar la apariencia al pasar el cursor */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Estilos para las imágenes dentro de las tarjetas */
+.tarjeta img {
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Media query para hacer el diseño responsive */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: calc(100% - 20px);/
+    }
+}
